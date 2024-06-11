@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+const pageTitle = "Blog";
+
+const bgColorPosts = "#474747";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+
+    <style define:vars={{ bgColorPosts }}>
+      .posts {
+        border-radius: 1rem;
+        padding: 2.2rem;
+        background-color: var(--bgColorPosts);
+
+        ul {
+          list-style: none;
+        }
+
+        a {
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+      </nav>
+
+      <h1 class="title">{pageTitle}</h1>
+
+      <div class="posts">
+        <h2>Read Ours Posts</h2>
+        <ul>
+          <li>
+            <a href="/posts/post-1">Primer Post</a>
+          </li>
+          <li>
+            <a href="/posts/post-2">Segundo Post</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

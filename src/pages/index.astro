@@ -1,5 +1,6 @@
 ---
-
+import "../styles/global.css";
+const pageTitle = "Home";
 ---
 
 <html lang="en">
@@ -8,10 +9,51 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>Astro</h1>
-    <h2>Hola Mundo desde Astro</h2>
+    <nav class="menu">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+
+    <h1 class="title">{pageTitle}</h1>
+
+    <section class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        explicabo rerum velit maiores, magnam vel. Voluptatem debitis nobis
+        maiores quidem dignissimos deserunt velit, tenetur magnam ad
+        perspiciatis doloremque, mollitia vel? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ullam vitae ad possimus asperiores, nobis
+        fugiat corrupti explicabo, necessitatibus minus modi temporibus iure!
+        Officia autem repellat consequuntur ipsum inventore minima molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nemo
+        quo, minus fugit nobis odit, reiciendis nulla pariatur quam
+        reprehenderit qui sapiente dicta, aperiam est totam nam corrupti aliquid
+        rem.
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+        consectetur! Pariatur, ab omnis? Recusandae, impedit. Provident sint
+        dolorem earum, nobis quas molestias suscipit commodi, vero rem odio sit
+        animi voluptate. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Vero laborum accusantium vel, incidunt dolore distinctio fuga,
+        atque alias illo fugiat minima doloremque error animi magni neque nobis.
+        Itaque, quasi tempore?
+      </p>
+      <div class="img">
+        <img src="/img/cabaña.jpg" alt="Cabaña" loading="lazy" />
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        odit repellendus deserunt iste consectetur optio perferendis nulla
+        praesentium autem corrupti totam minima animi, iusto nostrum eligendi
+        accusamus dolore placeat magni!
+      </p>
+    </section>
   </body>
 </html>

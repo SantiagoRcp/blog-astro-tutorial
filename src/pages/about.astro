@@ -1,0 +1,112 @@
+---
+import "../styles/global.css";
+const pageTitle = "About";
+const title = "About Us.";
+
+const info = {
+  info: "Learning Astro",
+  des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, consectetur! Pariatur, ab omnis? Recusandae, impedit. Provident sint dolorem earum, nobis quas molestias suscipit commodi",
+};
+const topics = ["Astro Installation", "File Creation", "Add Js", "Add CSS"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+
+    <style>
+      .container {
+        height: 100%;
+      }
+
+      .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        gap: 2.4rem;
+        padding: 2rem 1rem;
+        background-color: rgb(84, 84, 84);
+
+        p {
+          text-align: center;
+        }
+      }
+
+      .topic_goal {
+        display: grid;
+        grid-template-areas: "topics text";
+        width: 70%;
+        margin: 1rem auto;
+      }
+
+      .topics {
+        grid-area: topics;
+        text-align: start;
+
+        ul {
+          list-style: none;
+        }
+      }
+      .text {
+        text-align: end;
+        grid-area: text;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+
+    <section class="container">
+      <h1 class="title">{title}</h1>
+
+      <div class="banner">
+        <h2>{info.info}</h2>
+        <h3>{info.des}</h3>
+        <p>{info.text}</p>
+      </div>
+
+      <div class="topic_goal">
+        <div class="topics">
+          <p>What I have learned:</p>
+          <ul>
+            {topics.map((topic) => <li class="topic">{topic}</li>)}
+          </ul>
+        </div>
+
+        <div class="text">
+          {happy && <p>I'm happy to learn Astro</p>}
+          {
+            finished ? (
+              <p>I have finished this tutorial</p>
+            ) : (
+              <p>I haven't finished this tutorial</p>
+            )
+          }
+
+          {
+            goal === 3 ? (
+              <p>My goal is to finish this tutorial in 3 days.</p>
+            ) : (
+              <p>My goal isn't to finish this tutorial in 3 days.</p>
+            )
+          }
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
