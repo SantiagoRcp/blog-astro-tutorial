@@ -1,0 +1,26 @@
+---
+import Social from "./Social.astro";
+---
+
+<footer>
+  <div class="container">
+    <Social plataform="github" userName="SantiagoRcp" />
+    <Social plataform="facebook" userName="SantRCP" />
+    <Social plataform="instagram" userName="Santiago.rcp" />
+  </div>
+</footer>
+
+<style>
+  footer {
+    margin-top: 2.4rem;
+    padding: 2rem;
+    background-color: rgb(94, 94, 94);
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+</style>

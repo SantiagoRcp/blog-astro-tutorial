@@ -1,44 +1,14 @@
 ---
 layout: "../../layouts/PostLayout.astro"
-title: "Mi segundo Post"
+title: "Another Post"
 pubDate: 2024-06-09
 description: "Esta es la primer publicasion en astro"
 author: "SantiagoRcp"
 img:
   url: "https://docs.astro.build/assets/full-logo-light.png"
   alt: "Logo Astro"
-tags: ["astro", "aprendiendo-astro"]
+tags: ["blog", "comunidad"]
 ---
-
-Creando mas post en formato _Markdown_.
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo
 rerum velit maiores, magnam vel. Voluptatem debitis nobis maiores quidem

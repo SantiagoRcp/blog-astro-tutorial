@@ -1,24 +1,21 @@
 ---
-title: "Mi primer Post"
+layout: "../../layouts/PostLayout.astro"
+title: "My First Post"
 pubDate: 2024-06-09
-description: "Esta es la primer publicasion en astro"
+description: "This is the first post in astro."
 author: "SantiagoRcp"
 img:
   url: "https://docs.astro.build/assets/full-logo-light.png"
   alt: "Logo Astro"
-tags: ["blog", "astro", "aprendiendo astro"]
+tags: ["blog", "astro", "learnding astro"]
 ---
 
-# Mi primer Post
+Welcome to my first post in _Astro_, the framework to generate static site webs, the fastest and easiest to learn !
 
-publicado: 09-06-2024
+## What I have learned
 
-¡Bienvenido a Este Primer post en _Astro_, el generador de sitios estaticos mas rapido y facil de aprender!
+1.  **Install Astro**: In first place to learn is to install Astro.
 
-## Lo que he aprendido
+2.  **Create page and directories**: The then learn create files .astro and directories.
 
-1.  **Instalar Astro**: En primer lugar es aprender a instalar y configurar astro .
-
-2.  **Creación de paginas**: Luego aprender a crear y modificar archivos.
-
-3.  **Creacion de publicaciones y trabajar con markdown**: Y por ultimo de lo que e aprendi es a escribir publicaciones con formato markdown
+3.  **Craate post and work with file Markdown**: Am also learn to creat posts with Markdown files.
