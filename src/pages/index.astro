@@ -1,11 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
 import CardImage from "../components/CardImage.astro";
 const titlePage = "Home";
 ---
 
 <BaseLayout titlePage={titlePage}>
   <h2 class="title hi">Hi 👋!</h2>
+
+  <Greeting
+    client:load
+    messages={[
+      "Hi 😁",
+      "Welcome To My Website ✌️👋!!!",
+      "Hi Visitor and welcome to my webSite 😂👋😊!!!",
+      "Hola 😂👋😊!!!",
+      "Hola Bienvenido a mi sitio web 😂👋😊!!!",
+      "Hola este es mi sitio web😂👋😊!!!",
+      "Hola que gusto que estes aqui 😂👋😊!!!",
+    ]}
+  />
   <section>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo

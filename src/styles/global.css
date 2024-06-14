@@ -3,11 +3,19 @@ html {
   font-size: 62.5%;
 }
 
+html.dark {
+  background-color: #aa0707;
+}
+
+.dark .nav-links a {
+  color: rgb(0, 28, 28);
+}
+
 body {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   font-size: 2rem;
   line-height: 1.5;
-  background-color: rgb(28, 28, 28);
+  /* background-color: rgb(28, 28, 28); */
 }
 
 *,
